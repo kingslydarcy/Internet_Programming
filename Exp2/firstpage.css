@@ -1,0 +1,77 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.backimg {
+    background-image: url("netflix.png");
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    box-sizing:border-box;
+    background-size:cover;
+   
+    /* covers the entire container */
+
+}
+
+.central {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 90%;
+    height: 90%;
+    
+    border-radius: 3px;
+    backdrop-filter: blur(3px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(11, 11, 13, 0.75);
+    border-radius: 20px;
+    /*border: 1px solid rgba(255, 255, 255, 0.125);*/
+    
+}
+
+h3{
+    color:#DDDDDD;
+    font-size:30px;
+    font-weight: 100;
+    font-family:'Montserrat';
+    margin-left: 10px;
+    line-height: 4rem;
+    margin-right: 10px;
+}
+p{
+    color:#DDDDDD;
+    font-size: larger;
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 3rem;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: 'Montserrat';
+}
+
+button{
+margin: 20px;
+height:35px;
+width: 200px;
+border-radius: 15px;
+background-color: #282A3A;
+border-color: white;
+color: white;
+cursor:pointer;
+}
+
+button:hover{
+    transition: background-color 0.3s ease;
+}
+
+.buttondiv{
+    text-align: center;
+}
