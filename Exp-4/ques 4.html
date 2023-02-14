@@ -1,0 +1,39 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="ques" style="text-align: center; ">
+        <h3>Enter the string</h3>
+        <input type="text" id="teststr">
+        <button onclick="remove()">submit</button>
+    </div>
+    <br>
+    <div id="test" style="text-align: center;">
+    </div>
+    <script>
+        
+        
+        function isUpperCase(str) {
+            return /^[A-Z]/.test(str);
+        }
+        function remove(){
+            const string=document.getElementById("teststr").value;
+            //console.log(string);
+            //console.log(isUpperCase(string));
+            if(isUpperCase(string)){
+                document.getElementById("test").innerHTML="It is in the uppercase";
+            }
+            else{
+                document.getElementById("test").innerHTML="It is not in the uppercase";
+            }
+    }
+    </script>
+</body>
+
+</html>
