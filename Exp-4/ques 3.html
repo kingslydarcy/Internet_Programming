@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript function to find the most frequent word in a string</title>
+</head>
+<body>
+  <div id="ques" style="text-align: center; ">
+    <h3>Enter the text</h3>
+    <input type="text" id="teststr">
+    <button onclick="remove()">submit</button>
+</div>
+<h3 style="text-align: center;">most frequent word </h3>
+<div id="test" style="text-align: center;">
+    </div>
+<script>
+function remove(){
+  const str=document.getElementById("teststr").value;
+  const result=test(str);
+  document.getElementById("test").innerHTML=(result);
+}
+const test = (text) => { 
+   if (text.length === 0) 
+    {
+    return 'String should not be empty!'
+   }
+    if (typeof text !== 'string')
+     {
+       return 'It must be a string.'
+     }
+   const data = text.split(' ')
+  if (data.length < 2) {
+    return data[0]
+  }
+   const words = text.split(' ')
+  if (words.length < 2) {
+    return words[0]
+  }
+  const temp = {}
+  words.forEach(word => {
+    temp[word.toLocaleLowerCase()] = temp[word.toLocaleLowerCase()] + 1 || 1
+  })
+  const max = Object.keys(temp).reduce((n, word) => {
+    if (temp[word] > n.count) 
+    { 
+      return { word, count: temp[word] } 
+    } 
+    else 
+    { 
+      return n 
+    }
+  }, { word: '', count: 0 })
+  return max.word
+}
+//console.log(test("The quick brown fox jumps over the lazy dog"))
+
+</script>
+</body>
+</html>
