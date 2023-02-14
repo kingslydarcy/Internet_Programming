@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Write a JavaScript function to remove. 'null', '0', '""', 'false', 'undefined' and 'NaN' values from an array.</title>
+</head>
+<body>
+    <div id="ques" style="text-align: center; ">
+        <h3>Enter the array</h3>
+        <input type="text" id="arr">
+        <button onclick="remove()">submit</button>
+    </div>
+    <h3 style="text-align: center;">Modified array</h3>
+    <div id="test" style="text-align: center;">
+    </div>
+    <script>
+        function remove(){
+        const ele=document.getElementById("arr").value;
+        const array=ele.split(",");
+        // console.log(array);
+        // console.log(filter_array(array));
+        const array1=array.map(num=>parseInt(num));
+        const array2=array1.filter(num=>num>=1);
+        console.log(array1);
+        console.log(array2);
+        document.getElementById("test").innerHTML=(array2);
+        }
+
+    </script>
+</body>
+</html> 
