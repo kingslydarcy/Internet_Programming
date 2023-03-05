@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Consonant Counter</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('#count-btn').click(function() {
+        var inputStr = $('#input-text').val();
+        var consonants = inputStr.match(/[bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ]/g);
+        var count = consonants ? consonants.length : 0;
+        $('#result').text('Number of consonants: ' + count);
+      });
+    });
+  </script>
+</head>
+<body>
+  <label for="input-text">Enter a string:</label>
+  <input type="text" id="input-text">
+  <button id="count-btn">Count Consonants</button>
+  <div id="result"></div>
+</body>
+</html>
