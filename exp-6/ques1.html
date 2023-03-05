@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My List</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('#add-btn').click(function() {
+        var inputVal = $('#my-input').val();
+        if (inputVal) {
+          var li = $('<li>').text(inputVal);
+          $('#my-list').append(li);
+          $('#my-input').val('');
+        }
+      });
+    });
+  </script>
+</head>
+<body>
+  <form>
+    <label for="my-input">Add an item to the list:</label>
+    <input type="text" id="my-input">
+    <button type="button" id="add-btn">Add</button>
+  </form>
+  <ul id="my-list"></ul>
+</body>
+</html>
