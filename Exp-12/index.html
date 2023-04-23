@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Car Gallery</title>
+  <style>
+    .car-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .car-item {
+      border: 1px solid gray;
+      padding: 10px;
+      cursor: pointer;
+      width: 200px;
+    }
+
+    .car-details {
+      margin-top: 20px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="car-gallery"></div>
+  <div class="car-details"></div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
