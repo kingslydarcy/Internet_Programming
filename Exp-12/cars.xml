@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cars>
+  <car>
+    <make>Toyota</make>
+    <model>Corolla</model>
+    <year>2018</year>
+    <color>Red</color>
+    <price>15000</price>
+  </car>
+  <car>
+    <make>Honda</make>
+    <model>Civic</model>
+    <year>2019</year>
+    <color>Black</color>
+    <price>18000</price>
+  </car>
+  <car>
+    <make>Ford</make>
+    <model>Mustang</model>
+    <year>2020</year>
+    <color>Yellow</color>
+    <price>25000</price>
+  </car>
+</cars>
